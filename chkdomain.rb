@@ -30,7 +30,6 @@ class Domains
       Grab it while it lasts at https://clientes.nic.cl/registrar/agregarDominio.do
       END_OF_MESSAGE
       
-
       Net::SMTP.start('localhost', 25) do |smtp|
         smtp.send_message message,
         'tomas@clhost.tov.cl',
